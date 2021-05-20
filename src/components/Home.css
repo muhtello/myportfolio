@@ -1,0 +1,40 @@
+/* Add a black background color to the top navigation */
+.home{
+  
+  width: auto;
+  height: auto;
+}
+
+
+.title{
+  /* padding: 40px; */
+  text-align: center;
+  /* background: rgb(46, 45, 45); */
+  min-height: 10vh;
+  /* z-index: 1; maybe problem if color goes over element */
+}
+
+
+.display {
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  /* border: 3px solid rgb(192, 192, 192); */
+  padding: 10px;
+  margin: 10px;
+  
+}
+
+.gameContent {
+  width: auto;
+  padding: 10vh;
+  height: auto;
+  /* border: 3px solid rgb(192, 192, 192); */
+  /* background-color: #dfdbdbe3;; */
+}
+
+
+
