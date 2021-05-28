@@ -16,9 +16,9 @@ const gameContent = [
   {
     id: uniqid("g"),
     image: gamePicDisplay.WarFrame,
-    header: "No given name",  //TODO Give proper name
+    header: "#",
     nameGame: "WarFrame",
-    discription: "this is gamse made to fill your",
+    discription: gameDiscription.warFrame,
     gameEngine: gameEngine.unreal,
     script: "C++ & blueprint"
     

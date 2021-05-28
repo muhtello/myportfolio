@@ -14,7 +14,8 @@ class DisplaySoftware extends Component
     super();
     this.state = {
       projects: [],
-      portals: false
+      portals: false,
+      selectedProfile: {}
     }
 
     
@@ -27,13 +28,22 @@ class DisplaySoftware extends Component
   }
 
   handleViewClick(e, action){
-    console.log(e, action);
-    this.setState({portals: true});
+    e.preventDefault();
+    if (action.type === "link"){
+      window.open(action.src);
+      return;
+       
+    }
+    this.setState({
+      portals: true,
+      selectedProfile: action
+    });
+    
   }
 
   render(){
-    const {projects, portals} = this.state;
-    console.log(portals);
+    const {projects, portals, selectedProfile} = this.state;
+    
     return(
       <div>
         <Container>
@@ -52,8 +62,11 @@ class DisplaySoftware extends Component
                     <CardSoftwareDisplay
                       header={project.header}
                       discreption= {project.discreption}
-                      view ={project.scripView}
-                      handleViewClick = {(e, action) => this.handleViewClick(e, action)}
+                      view ={project.scriptView}
+                      info = {project.info}
+                      handleViewClick = {
+                        (e, action) => this.handleViewClick(e, action)
+                      }
                     />
                   </Grid>
                 )  
@@ -68,15 +81,15 @@ class DisplaySoftware extends Component
             portals ? (
               <div>
                 <Model>
-                  <ModelSoftwareProfile 
+                  <ModelSoftwareProfile
+
                     closeModel={() => this.setState({portals : false})}
-                    selectedProfile = {{gf: true}}
+                    selectedProfile = {selectedProfile}
                   />
                 </Model>
               </div>
             ) : (
               <div>
-                dfsdgdfgdfgf
               </div>
             )
           }

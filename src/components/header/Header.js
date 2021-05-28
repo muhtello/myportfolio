@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import picProfile from "./Bewerbungsfoto_Muhanad_Tello.jpg";
+import picProfile from "./MouhanadPic.jpg";
 import Avatar from '@material-ui/core/Avatar';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
@@ -8,6 +8,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 
 const linkInSite = "https://www.linkedin.com/in/muhanad-tello";
+
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
@@ -39,6 +40,7 @@ const Header = () => {
     <div className={classes.root}>
       <Container maxWidth="sm" >
         <Avatar alt="#MuhanadTello" src= {picProfile} className={classes.pic} />
+        
         <Typography  
           className={classes.textTittel}  
           variant="h2"

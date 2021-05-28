@@ -5,95 +5,94 @@ import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-import IconButton from '@material-ui/core/IconButton';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import Collapse from '@material-ui/core/Collapse';
 import Button from '@material-ui/core/Button';
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import Divider from '@material-ui/core/Divider';
 
 const useStyles = makeStyles((theme) =>({
   root: {
     maxWidth: 400,
     
   },
-  title: {
-    fontSize: 14,
+  info: {
+    textAlign: "left",
+    paddingTop: 0,
+    paddingBottom: 0,  
+    
   },
-  expand: {
-    transform: 'rotate(0deg)',
-    marginLeft: 'auto',
-    transition: theme.transitions.create('transform', {
-      duration: theme.transitions.duration.shortest,
-    }),
+  inlineList: {
+    display: 'inline',
   },
-  expandOpen: {
-    transform: 'rotate(180deg)',
-  },
+  // expand: {
+  //   transform: 'rotate(0deg)',
+  //   marginLeft: 'auto',
+  //   transition: theme.transitions.create('transform', {
+  //     duration: theme.transitions.duration.shortest,
+  //   }),
+  // },
+  // expandOpen: {
+  //   transform: 'rotate(180deg)',
+  // },
 
 }));
 
 
 export default function CardSoftwareDisplay(props) {
 
-  const [expanded, setExpanded] = React.useState(false);
-
-  const handleExpandClick = () => {
-    setExpanded(!expanded);
-  };
   const classes = useStyles();
-  const { header, discreption, view} = props;
+  const { header, discreption, view, info} = props;
 
   return (
     <Card className={classes.root}>
      <CardContent>
-      <Typography className={classes.title} color="textSecondary" gutterBottom>
-        {header}
-      </Typography>
-      <Typography variant="h5" component="h2">
-        {discreption}
-      </Typography>
+        <Typography variant="h5" component="h2"  gutterBottom>
+          {header}
+        </Typography>
+        <Typography variant="body2" color="textSecondary" component="p">
+          {discreption}
+        </Typography>
      </CardContent>
-     <CardActions disableSpacing>
-     <Button 
-        size="small" 
-        color="primary"
-        onClick = {() => handleExpandClick()}
-      >
-        View
-      </Button>
-      <IconButton
-          className={clsx(classes.expand, {
-            [classes.expandOpen]: expanded,
-          })}
-          onClick={handleExpandClick}
-          aria-expanded={expanded}
-          aria-label="show more"
-        >
-          <ExpandMoreIcon />
-        </IconButton>
-        
-     </CardActions>
-     <Collapse
-      in={expanded} 
-      timeout="auto" 
-      unmountOnExit
-     >
-      <CardActions>
-        {view && view.length > 0 && view.map((v, i) =>
+     <Divider light variant="fullWidth"/>
+      <List>
+        {info && info.length > 0 && info.map((inf, index) => 
             {
               return(
-                <Button
-                  key={i}
-                  onClick = {(e) => props.handleViewClick(e, v.action)}
-                >
-                  {v.label}
-                </Button>
+                <ListItem key={index} className={classes.info}>
+                  <ListItemText 
+                    secondary = {
+                      <React.Fragment>
+                        <Typography
+                          component="span"
+                          variant="body2"
+                          className={classes.inlineList}
+                          color="textPrimary"
+                        >
+                          {inf.label + ": "}
+                        </Typography>
+                        {inf.value}
+                      </React.Fragment>
+                    }
+                  
+                  />
+                </ListItem>
               )
             }
           )
-        }
-      </CardActions>
-     
-     </Collapse>
+        }  
+      </List>
+      <Divider light variant="fullWidth"/>
+     <CardActions disableSpacing>
+      <Button 
+        size="small" 
+        color="primary"
+        onClick = {(e) => props.handleViewClick(e, view)}
+      >
+        View
+      </Button>
+     </CardActions>
+
     </Card>
   );
 }

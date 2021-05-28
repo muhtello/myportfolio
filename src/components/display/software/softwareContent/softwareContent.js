@@ -1,38 +1,56 @@
+import arx from "../../../../picdata/software/arztProjectViedo_Clip.mp4";
+import {softwareDiscrption} from "./softwareDiscreption";
+
+const linkSpringBoot = 'https://github.com/muhtello/middle-point.git';
 
 
 export const getSoftwareContent = () => {
   
   const softerContent = [
     {
-      header: "some pro",
-      discreption: "this is progjelkfjdslkjg f dklfjg dflkjg wjeuiosj ljsgo",
-      scripView: [
+      header: "Arztpraxis",
+      discreption: softwareDiscrption.arztPraxis,
+      info: [
         {
-          label: "project",
-          action: {
-            data: "this is data",
-            isPortal: true
-          }
+          label: "backend",
+          value: "[express.js, Chatbot dialog flow]"
         },
         {
-          label: "cone",
-          action: {
-            data: "this is data",
-            isPortal: true
-          }
+          label: "frontend",
+          value: "[React.js, Redux, 3DAvatar]"
         },
         {
-          label: "cone",
-          action: {
-            data: "this is data",
-            isPortal: true
-          }
+          label: "databank",
+          value: "{NoSQL, MongoDB}"
         }
-      ]
+      ],
+      scriptView: {
+        type: "video",
+        src: arx
+      }
+      
     },
     {
-      header: "some pro",
-      discreption: "this is progjelkfjdslkjg f dklfjg dflkjg wjeuiosj ljsgo"
+      header: "Card Review",
+      discreption: softwareDiscrption.ReviewCard,
+      info: [
+        {
+          label: "framework",
+          value: "[Spring Boot]"
+        },
+        {
+          label: "databank",
+          value: "{SQL, postgreSQL}"
+        },
+        {
+          label: "Coming Soon",
+          value: "Client Side"
+        }
+      ],
+      scriptView: {
+        type: "link",
+        src: linkSpringBoot
+      }
     }
   ];
   return softerContent;

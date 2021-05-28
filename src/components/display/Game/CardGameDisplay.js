@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) =>({
   },
   footer: {
     textAlign: "left",
-    color: "blue"
+    //color: "blue"
   }
 
 }));

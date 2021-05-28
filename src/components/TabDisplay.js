@@ -10,15 +10,19 @@ const useStyles = makeStyles({
     flexGrow: 1,
     backgroundColor: '#646464',
     padding: "10px",
-    border: "3px solid rgb(192, 192, 192)",
+    boxShadow: "none"
+    //border: "3px solid rgb(192, 192, 192)",
     
     
   },
   tab: {
-    //border: "3px solid rgb(192, 192, 192)",
+    border: "3px solid rgb(192, 192, 192)",
     backgroundColor: '#646464',
+    margin:"1vh",
+    marginBottom: 0,
     '&.Mui-selected': {
-      backgroundColor: '#283431e3'
+      backgroundColor: '#283431e3',
+      color: "rgb(192, 192, 192)"
     },
   }
 });
@@ -31,11 +35,10 @@ export default function TabDisplay(props) {
     setValue(newValue);
     props.handleTabChange(newValue);
   };
-
+ 
   return (
     <Paper className={classes.root}>
       <Tabs
-        
         TabIndicatorProps={{style: {background:'white',  display: "none",}}}
         value={value}
         onChange={handleChange}

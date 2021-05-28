@@ -30,18 +30,19 @@ class HomePage extends Component
           <Header /> 
         </div>
         <div className="display">
-          
           <TabDisplay 
             label={label} 
             handleTabChange={(index) => this.setState({indexTabe: index})} 
-          /> 
-          <div className="gameContent">
+          />
+
+          <div className="content">
             {indexTabe === 1 ? 
               <DisplayGames />
               :
               <DisplaySoftware />
             }
           </div>
+        
         </div>
       </div>
     )
