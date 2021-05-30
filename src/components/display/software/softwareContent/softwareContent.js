@@ -8,7 +8,7 @@ export const getSoftwareContent = () => {
   
   const softerContent = [
     {
-      header: "Arztpraxis",
+      header: "Appointment Reservation",
       discreption: softwareDiscrption.arztPraxis,
       info: [
         {
@@ -21,7 +21,7 @@ export const getSoftwareContent = () => {
         },
         {
           label: "databank",
-          value: "{NoSQL, MongoDB}"
+          value: "{NoSQL: MongoDB}"
         }
       ],
       scriptView: {
@@ -40,7 +40,7 @@ export const getSoftwareContent = () => {
         },
         {
           label: "databank",
-          value: "{SQL, postgreSQL}"
+          value: "{SQL: postgreSQL}"
         },
         {
           label: "Coming Soon",
