@@ -34,15 +34,13 @@ class HomePage extends Component
             label={label} 
             handleTabChange={(index) => this.setState({indexTabe: index})} 
           />
-
-          <div className="content">
+        <div className="content">
             {indexTabe === 1 ? 
               <DisplayGames />
               :
               <DisplaySoftware />
             }
           </div>
-        
         </div>
       </div>
     )

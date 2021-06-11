@@ -44,7 +44,7 @@ const gameContent = [
   {
     id: uniqid("g"),
     image: gamePicDisplay.pico8,
-    header: "PICO 8",
+    header: "PICO-8",
     nameGame: "pico8",
     discription: gameDiscription.pico8Discription,
     gameEngine: gameEngine.pico,

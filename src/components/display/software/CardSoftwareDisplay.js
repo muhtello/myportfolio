@@ -1,5 +1,5 @@
 import React from 'react';
-import clsx from 'clsx';
+//import clsx from 'clsx';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -10,6 +10,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
+import VisibilityOutlinedIcon from '@material-ui/icons/VisibilityOutlined';
 
 const useStyles = makeStyles((theme) =>({
   root: {
@@ -25,16 +26,7 @@ const useStyles = makeStyles((theme) =>({
   inlineList: {
     display: 'inline',
   },
-  // expand: {
-  //   transform: 'rotate(0deg)',
-  //   marginLeft: 'auto',
-  //   transition: theme.transitions.create('transform', {
-  //     duration: theme.transitions.duration.shortest,
-  //   }),
-  // },
-  // expandOpen: {
-  //   transform: 'rotate(180deg)',
-  // },
+
 
 }));
 
@@ -43,14 +35,16 @@ export default function CardSoftwareDisplay(props) {
 
   const classes = useStyles();
   const { header, discreption, view, info} = props;
-
+  const colorText = "#076785";
   return (
     <Card className={classes.root}>
      <CardContent>
-        <Typography variant="h5" component="h2"  gutterBottom>
+        <Typography variant="h5" component="h2"  gutterBottom style={{color: colorText}}>
           {header}
         </Typography>
-        <Typography variant="body2" color="textSecondary" component="p">
+        <Typography 
+          variant="body1" 
+        >
           {discreption}
         </Typography>
      </CardContent>
@@ -60,7 +54,7 @@ export default function CardSoftwareDisplay(props) {
             {
               return(
                 <ListItem key={index} className={classes.info}>
-                  <ListItemText 
+                  <ListItemText
                     secondary = {
                       <React.Fragment>
                         <Typography
@@ -85,11 +79,16 @@ export default function CardSoftwareDisplay(props) {
       <Divider light variant="fullWidth"/>
      <CardActions disableSpacing>
       <Button 
-        size="small" 
-        color="primary"
+        size="large"
+        //color="primary" 
+        style={{color: colorText}}
         onClick = {(e) => props.handleViewClick(e, view)}
+        endIcon = {
+          <VisibilityOutlinedIcon style={{color: colorText}} />
+        }
       >
         View
+        
       </Button>
      </CardActions>
 

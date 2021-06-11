@@ -12,15 +12,15 @@ export const getSoftwareContent = () => {
       discreption: softwareDiscrption.arztPraxis,
       info: [
         {
-          label: "backend",
-          value: "[express.js, Chatbot dialog flow]"
+          label: "Backend",
+          value: "[Express.js, Chatbot Dialog Flow]"
         },
         {
-          label: "frontend",
+          label: "Frontend",
           value: "[React.js, Redux, 3DAvatar]"
         },
         {
-          label: "databank",
+          label: "Databank",
           value: "{NoSQL: MongoDB}"
         }
       ],
@@ -35,12 +35,12 @@ export const getSoftwareContent = () => {
       discreption: softwareDiscrption.ReviewCard,
       info: [
         {
-          label: "framework",
+          label: "Framework",
           value: "[Spring Boot]"
         },
         {
-          label: "databank",
-          value: "{SQL: postgreSQL}"
+          label: "Databank",
+          value: "{SQL: PostgreSQL}"
         },
         {
           label: "Coming Soon",

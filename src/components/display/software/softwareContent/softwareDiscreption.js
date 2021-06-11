@@ -1,8 +1,8 @@
-const arztPraxis = `This is final protype project for IHK. The Task is helping a patient to reserving an appointment with supporting in front by 3D Avatar and user interface and in background by Chatbot. 
-Chatbot get all necessary information from patient to make appointment and save it in provided databank. `;
+const arztPraxis = `This is my final prototype project for IHK which is helping a patient to reserve an appointment step by step supported by 3D avatar.
+The avatar is connected in the background to a chatbot which collects all necessary information for reservation and saves it in a provided databank after conformation from the patient. 
+`;
 
-const ReviewCard = `The application builds on server side that makes a synchronization data on both Server and client side.
-The implementations provided with JPA feature and conntected to database. its support all platforms client side. 
+const ReviewCard = `This application can manage relational database (Add, Update and Delete) and send data to client through API. The implementation has been provided by JpaRepository feature. 
 `;
 
 

@@ -26,15 +26,16 @@ const ModelSoftwareProfile = (props) => {
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
+    flexGrow: 5,
     display: 'flex',
     flexWrap: 'wrap',
     
+    
   },
   paper: {
-    padding: theme.spacing(2),
+    padding: theme.spacing(0.5),
     margin: 'auto',
-    maxWidth: 900,
+    //maxWidth: 900,
 
   },
   image: {
