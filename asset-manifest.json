@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/myportfolio/static/css/main.41b7e8ef.chunk.css",
-    "main.js": "/myportfolio/static/js/main.f047746d.chunk.js",
-    "main.js.map": "/myportfolio/static/js/main.f047746d.chunk.js.map",
+    "main.css": "/myportfolio/static/css/main.e035b8a4.chunk.css",
+    "main.js": "/myportfolio/static/js/main.c0898b5a.chunk.js",
+    "main.js.map": "/myportfolio/static/js/main.c0898b5a.chunk.js.map",
     "reactPlayerDailyMotion.js": "/myportfolio/static/js/reactPlayerDailyMotion.12cc9c7e.chunk.js",
     "reactPlayerDailyMotion.js.map": "/myportfolio/static/js/reactPlayerDailyMotion.12cc9c7e.chunk.js.map",
     "reactPlayerFacebook.js": "/myportfolio/static/js/reactPlayerFacebook.b9a74592.chunk.js",
@@ -36,7 +36,7 @@
     "static/js/16.0e9ef910.chunk.js": "/myportfolio/static/js/16.0e9ef910.chunk.js",
     "static/js/16.0e9ef910.chunk.js.map": "/myportfolio/static/js/16.0e9ef910.chunk.js.map",
     "index.html": "/myportfolio/index.html",
-    "static/css/main.41b7e8ef.chunk.css.map": "/myportfolio/static/css/main.41b7e8ef.chunk.css.map",
+    "static/css/main.e035b8a4.chunk.css.map": "/myportfolio/static/css/main.e035b8a4.chunk.css.map",
     "static/js/15.fae0ba6b.chunk.js.LICENSE.txt": "/myportfolio/static/js/15.fae0ba6b.chunk.js.LICENSE.txt",
     "static/media/ABetterLifeSea.7f6d1dc1.gif": "/myportfolio/static/media/ABetterLifeSea.7f6d1dc1.gif",
     "static/media/AvatarPic.6b101013.png": "/myportfolio/static/media/AvatarPic.6b101013.png",
@@ -48,6 +48,7 @@
     "static/media/WarFrameChangeCharacter.ce329c95.gif": "/myportfolio/static/media/WarFrameChangeCharacter.ce329c95.gif",
     "static/media/WarFrameChangeSkin.199efb0c.gif": "/myportfolio/static/media/WarFrameChangeSkin.199efb0c.gif",
     "static/media/WarFramewellcomeScreen.569ed435.png": "/myportfolio/static/media/WarFramewellcomeScreen.569ed435.png",
+    "static/media/WebChatExample.77a6ac3a.mp4": "/myportfolio/static/media/WebChatExample.77a6ac3a.mp4",
     "static/media/arztProjectViedo_Clip.62196d36.mp4": "/myportfolio/static/media/arztProjectViedo_Clip.62196d36.mp4",
     "static/media/gameplay shooter.7dbf41bb.gif": "/myportfolio/static/media/gameplay shooter.7dbf41bb.gif",
     "static/media/jimboMouse.e0505044.gif": "/myportfolio/static/media/jimboMouse.e0505044.gif",
@@ -64,7 +65,7 @@
   "entrypoints": [
     "static/js/runtime-main.245a21a2.js",
     "static/js/15.fae0ba6b.chunk.js",
-    "static/css/main.41b7e8ef.chunk.css",
-    "static/js/main.f047746d.chunk.js"
+    "static/css/main.e035b8a4.chunk.css",
+    "static/js/main.c0898b5a.chunk.js"
   ]
 }
