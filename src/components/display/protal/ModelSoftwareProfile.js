@@ -1,6 +1,5 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-//import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import ReactPlayer from 'react-player/lazy'
 
@@ -66,16 +65,7 @@ const SoftwareCard = (props) => {
   else{
     selectedElement = <img  src={src} alt={"#" + src} width="500" height="333"/>
   }
-  // switch(type){
-  //   case "video":
-  //   selectedElement = <ReactPlayer url={url} controls/>
-  //   break;
-  //   case "pic":
-  //     selectedElement = <img  src={url} alt={"#" + url} width="500" height="333"/>
-  //   default:
-  //     selectedElement = <p>there are no </p>
-  //   break;
-  // }
+
 
   const classes = useStyles();
   return(

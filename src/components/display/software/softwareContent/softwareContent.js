@@ -1,7 +1,8 @@
-import arx from "../../../../picdata/software/arztProjectViedo_Clip.mp4";
+import arztVideo from "../../../../picdata/software/arztProjectViedo_Clip.mp4";
+import chatVideo  from "../../../../picdata/software/WebChatExample.mp4";
 import {softwareDiscrption} from "./softwareDiscreption";
 
-const linkSpringBoot = 'https://github.com/muhtello/middle-point.git';
+
 
 
 export const getSoftwareContent = () => {
@@ -26,7 +27,7 @@ export const getSoftwareContent = () => {
       ],
       scriptView: {
         type: "video",
-        src: arx
+        src: arztVideo
       }
       
     },
@@ -49,8 +50,28 @@ export const getSoftwareContent = () => {
       ],
       scriptView: {
         type: "link",
-        src: linkSpringBoot
+        src: 'https://github.com/muhtello/middle-point.git'
       }
+    },
+    {
+      header: "Web Chat",
+      discreption: softwareDiscrption.webChat,
+      info: [
+        {
+          label: "Framework",
+          value: "[Spring Boot, WebSocket]"
+        },
+        {
+          label: "Frontend",
+          value: "[React.js, Material-ui]"
+        },
+
+      ],
+      scriptView: {
+        type: "video",
+        src: chatVideo
+      }
+      
     }
   ];
   return softerContent;
