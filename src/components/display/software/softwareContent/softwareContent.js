@@ -1,5 +1,4 @@
 import arztVideo from "../../../../picdata/software/arztProjectViedo_Clip.mp4";
-import chatVideo  from "../../../../picdata/software/WebChatExample.mp4";
 import {softwareDiscrption} from "./softwareDiscreption";
 
 
@@ -68,8 +67,8 @@ export const getSoftwareContent = () => {
 
       ],
       scriptView: {
-        type: "video",
-        src: chatVideo
+        type: "link",
+        src: "https://github.com/muhtello/web-chat-application.git"
       }
       
     }
