@@ -48,11 +48,10 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap',
   },
   paper: {
-    padding: theme.spacing(2),
+    padding: theme.spacing(0),
     margin: 'auto',
     maxWidth: 800,
-    
-    //backgroundColor: "red"
+    backgroundColor: "black"
   },
   image: {
     width: 528,
@@ -77,7 +76,7 @@ const GameCard = (props) =>
           spacing={3}  
           alignItems="center"
         >
-          <Grid item>
+          <Grid item >
             <div className={classes.image}>
               <GifPlayer className={classes.img} gift={props.pic} still={props.pic} />
             </div>

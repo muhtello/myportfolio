@@ -57,7 +57,8 @@ class DisplaySoftware extends Component
                 return(
                   <Grid
                     key={index}
-                    item xs ={5}
+                    item 
+                    xs={12} md={6} lg={5}
                   >
                     <CardSoftwareDisplay
                       header={project.header}

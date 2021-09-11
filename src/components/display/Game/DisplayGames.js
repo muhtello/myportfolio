@@ -55,7 +55,8 @@ class DisplayGames extends Component
                   return(
                     <Grid
                     key={game.id}
-                    item xs ={5}
+                    item 
+                    xs={12} md={6} lg={5}
                     onClick = {() => this.handleSelectProfile(game.nameGame)}
                     >
                       <CardGameDisplay 

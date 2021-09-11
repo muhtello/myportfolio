@@ -21,7 +21,9 @@ const useStyles = makeStyles((theme) =>({
   },
   media: {
     height: 240,
-    paddingTop: '20.25%', // 16:9
+    
+    width: "100%",
+    margin: 1
   },
   info: {
     textAlign: "left",
@@ -41,12 +43,13 @@ export default function CardGameDisplay(props) {
   const {image, header, discreption, gameEngine, script} = props;
   const colorText = "#076785";
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} variant="outlined">
       <CardActionArea>
         <CardMedia
           className={classes.media}
           image={image}
-          title="Contemplative Reptile"
+          title={header}
+          component = "img"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2" style={{color: colorText}}>
@@ -93,10 +96,6 @@ export default function CardGameDisplay(props) {
             }
           />
         </ListItem>
-        {/* <ListItem>
-          <ListItemText className={classes.footer} secondary={"Game Engine: " + gameEngine}/>
-          <ListItemText className={classes.footer} secondary={"Script: " + script} />
-        </ListItem> */}
       </List>
       <Divider light variant="fullWidth"/>
       <CardActions disableSpacing>

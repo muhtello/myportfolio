@@ -1,86 +1,86 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
-import ReactPlayer from 'react-player/lazy'
+// import React from 'react';
+// import { makeStyles } from '@material-ui/core/styles';
+// import Paper from '@material-ui/core/Paper';
+// import ReactPlayer from 'react-player/lazy'
 
-import "./model.css";
+// import "./model.css";
 
-const ModelSoftwareProfile = (props) => {
-  const selectedProfile = props.selectedProfile;
+// const ModelSoftwareProfile = (props) => {
+//   const selectedProfile = props.selectedProfile;
   
   
-  return (
-    <div
-      className="modal"
-      onClick = { () => props.closeModel()}
-    >
-      <SoftwareCard 
-        src={selectedProfile.src}
-        type= {selectedProfile.type}
+//   return (
+//     <div
+//       className="modal"
+//       onClick = { () => props.closeModel()}
+//     >
+//       <SoftwareCard 
+//         src={selectedProfile.src}
+//         type= {selectedProfile.type}
       
-      />
-    </div>
-  )
-}
+//       />
+//     </div>
+//   )
+// }
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 5,
-    display: 'flex',
-    flexWrap: 'wrap',
+// const useStyles = makeStyles((theme) => ({
+//   root: {
+//     flexGrow: 5,
+//     display: 'flex',
+//     flexWrap: 'wrap',
     
     
-  },
-  paper: {
-    padding: theme.spacing(0.5),
-    margin: 'auto',
-    //maxWidth: 900,
+//   },
+//   paper: {
+//     padding: theme.spacing(0.5),
+//     margin: 'auto',
+//     //maxWidth: 900,
 
-  },
-  image: {
-    width: 528,
-    height: "auto",
-  },
-  img: {
-    margin: 'auto',
-    display: 'block',
-    maxWidth: '100%',
-    maxHeight: '100%',
-  },
+//   },
+//   image: {
+//     width: 528,
+//     height: "auto",
+//   },
+//   img: {
+//     margin: 'auto',
+//     display: 'block',
+//     maxWidth: '100%',
+//     maxHeight: '100%',
+//   },
   
-}));
+// }));
 
 
-const SoftwareCard = (props) => {
-  let selectedElement;
-  const src= props.src;
-  const type = props.type;
+// const SoftwareCard = (props) => {
+//   let selectedElement;
+//   const src= props.src;
+//   const type = props.type;
 
-  if (type === "video")
-  {
-    selectedElement = <ReactPlayer url={src} controls/>
-  }
-  else if (type=== "link"){
-    selectedElement = null;
-  }
-  else{
-    selectedElement = <img  src={src} alt={"#" + src} width="500" height="333"/>
-  }
+//   if (type === "video")
+//   {
+//     selectedElement = <ReactPlayer url={src} controls/>
+//   }
+//   else if (type=== "link"){
+//     selectedElement = null;
+//   }
+//   else{
+//     selectedElement = <img  src={src} alt={"#" + src} width="500" height="333"/>
+//   }
 
 
-  const classes = useStyles();
-  return(
-    <div className={classes.root}>
-      <Paper  
-        className={classes.paper}
-        variant="outlined" square 
-      >
-        {selectedElement}
+//   const classes = useStyles();
+//   return(
+//     <div className={classes.root}>
+//       <Paper  
+//         className={classes.paper}
+//         variant="outlined" square 
+//       >
+//         {selectedElement}
         
-      </Paper>
-    </div>
-  )
-}
+//       </Paper>
+//     </div>
+//   )
+// }
 
 
-export default ModelSoftwareProfile;
+// export default ModelSoftwareProfile;

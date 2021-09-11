@@ -37,7 +37,7 @@ export default function CardSoftwareDisplay(props) {
   const { header, discreption, view, info} = props;
   const colorText = "#076785";
   return (
-    <Card className={classes.root}>
+    <Card className={classes.root} variant="outlined">
      <CardContent>
         <Typography variant="h5" component="h2"  gutterBottom style={{color: colorText}}>
           {header}
