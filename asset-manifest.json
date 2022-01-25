@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/myportfolio/static/css/main.267ae778.chunk.css",
-    "main.js": "/myportfolio/static/js/main.79fa0f9d.chunk.js",
-    "main.js.map": "/myportfolio/static/js/main.79fa0f9d.chunk.js.map",
+    "main.js": "/myportfolio/static/js/main.417677f8.chunk.js",
+    "main.js.map": "/myportfolio/static/js/main.417677f8.chunk.js.map",
     "reactPlayerDailyMotion.js": "/myportfolio/static/js/reactPlayerDailyMotion.12cc9c7e.chunk.js",
     "reactPlayerDailyMotion.js.map": "/myportfolio/static/js/reactPlayerDailyMotion.12cc9c7e.chunk.js.map",
     "reactPlayerFacebook.js": "/myportfolio/static/js/reactPlayerFacebook.b9a74592.chunk.js",
@@ -41,7 +41,6 @@
     "static/media/ABetterLifeSea.7f6d1dc1.gif": "/myportfolio/static/media/ABetterLifeSea.7f6d1dc1.gif",
     "static/media/AvatarPic.6b101013.png": "/myportfolio/static/media/AvatarPic.6b101013.png",
     "static/media/JimboTitle.f7b1f251.JPG": "/myportfolio/static/media/JimboTitle.f7b1f251.JPG",
-    "static/media/ToABetterLifeScreenStart.22b5f872.gif": "/myportfolio/static/media/ToABetterLifeScreenStart.22b5f872.gif",
     "static/media/ToABetterLifeSea.5823afa5.gif": "/myportfolio/static/media/ToABetterLifeSea.5823afa5.gif",
     "static/media/ToABetterLifeboat.d146d61b.gif": "/myportfolio/static/media/ToABetterLifeboat.d146d61b.gif",
     "static/media/WarFrameAbility.79f8aa88.gif": "/myportfolio/static/media/WarFrameAbility.79f8aa88.gif",
@@ -65,6 +64,6 @@
     "static/js/runtime-main.245a21a2.js",
     "static/js/15.fae0ba6b.chunk.js",
     "static/css/main.267ae778.chunk.css",
-    "static/js/main.79fa0f9d.chunk.js"
+    "static/js/main.417677f8.chunk.js"
   ]
 }
