@@ -5,10 +5,10 @@ import ABetterLifeSea2 from "../../../../../picdata/ToABetterLife/ABetterLifeSea
 
 export const BETTERLIFE = [
   
-  {
-    idDiscription: 1,
-    pic: ToABetterLifeScreenStart
-  },
+  //{
+    //idDiscription: 1,
+    //pic: ToABetterLifeScreenStart
+  //},
   {
     idDiscription: 2,
     pic: ToABetterLifeboat
